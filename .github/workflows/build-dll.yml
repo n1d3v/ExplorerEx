@@ -35,7 +35,7 @@ jobs:
         arch: amd64
     - name: Compile ExplorerEx (explorer.dll)
       run: | 
-        msbuild explorer.sln /p:Configuration=ReleaseDLL /p:Platform=x64
+        run: msbuild explorer.sln /p:Configuration=ReleaseDLL /p:Platform=x64 /p:VCToolsVersion=14.51.36231
     - name: Set short git commit SHA
       id: vars
       shell: bash
